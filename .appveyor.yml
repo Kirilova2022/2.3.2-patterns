@@ -15,5 +15,5 @@ before_build:
   chmod +x gradlew
   
 build_script:
+  - chmod +x gradlew #  предоставление прав на запуск файла gradlew
   - ./gradlew test --info "-Dselenide.headless=true"
-  
